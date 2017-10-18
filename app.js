@@ -1,7 +1,7 @@
 'use strict';
 
-alert('WoooOOOooOOOoo, Guessing Game Time! \nHow well do you know This Guy?! \n\nThe only site that knows YOU CARE!');
-alert('You will be given 5 questions about me to determine whether we should be friends. \n\n Please answer with a "yes" or "y" or with a "no" or "n"');
+alert('Do you want to play a game? \nI call it "How well do you know Richard?" \n\nThe only site that knows YOU CARE!');
+alert('You will be given 5 questions about me to determine whether we should friends. \n\n Answer with a "yes" or "y" or with a "no" or "n"');
 
 var one = prompt('Given the option of mutant abilities, would I want to be able to fly?');
 console.log('Question One Answer:', one);
@@ -9,7 +9,7 @@ console.log('Question One Answer:', one);
 one = one.toLowerCase();
 
 if(one === 'yes' || one === 'y') {
-  alert('No! I have a healthy fear of heights.');
+  alert('Nah... I have a healthy fear of heights.');
 } else if(one === 'no' || one === 'n'){
   alert('That\'s right! Flying is for squirrels and fish.');
 };
@@ -20,9 +20,9 @@ console.log('Question Two Answer:', two);
 two = two.toLowerCase();
 
 if(two === 'yes' || two === 'y') {
-  alert('Yes! I\'m always tired. I take a car/boat/bus-ride to class and back every day!');
+  alert('Yes! I\'m always tired. I take a car/boat/bus-ride to class and back.');
 } else if(two === 'no' || two === 'n'){
-  alert('That\'s incorrect. I\'m so tired. I survive on thirty 10 second power naps every day.');
+  alert('That\'s incorrect. I\'m so tired. I survive on micro naps.');
 };
 
 var three = prompt('Are lagers my favorite beers?');
@@ -33,7 +33,7 @@ three = three.toLowerCase();
 if(three === 'yes' || three === 'y') {
   alert('Nope. IPAs are the right PAs.');
 } else if(three === 'no' || three === 'n'){
-  alert('That\'s right! IPAs for me.');
+  alert('That\'s right! Let\'s go put back a few.');
 };
 
 var four = prompt('Should they reboot the tv series Firefly?');
@@ -42,9 +42,9 @@ console.log('Question Four Answer:', four);
 four = four.toLowerCase();
 
 if(four === 'yes' || four === 'y') {
-  alert('YES! RIGHT?!');
+  alert('They absolutely should.');
 } else if(four === 'no' || four === 'n'){
-  alert('Who hurt you?');
+  alert('Honestly, "No" shouldn\'t have even been a choice.');
 };
 
 var five = prompt('Is money the root of my happiness?');
@@ -55,5 +55,30 @@ five = five.toLowerCase();
 if(five === 'yes' || five === 'y') {
   alert('Oh, for sho.');
 } else if(five === 'no' || five === 'n'){
-  alert('Don\'t tell my lady, but yes, money is where it\'s at.');
+  alert('I guess it isn\'t everything...');
 };
+
+
+var number;
+var counter = 1;
+
+while(number !== 15){
+  number = parseInt(prompt('About how many IPAs do you think until my body starts to work in reverse?'));
+
+  if(number < 15) {
+    alert(number + '? I can do better than that.');
+    counter++;
+  } else if(number > 24) {
+    alert(number + ' IPAs is how I\'d die. You should guess a smaller number like, 15.');
+  } else if(number > 15) {
+    alert('I\'m probably getting closer to shitting myself at ' + number + ' IPAs.');
+    counter++;
+  } else if(number === NaN || number === null) {
+    alert('Please enter a number.');
+    counter++;
+  }
+}
+
+console.log('Counter:', counter);
+
+alert('Nailed it!');

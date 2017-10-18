@@ -1,48 +1,39 @@
-/* App Styles */
+/*In the Header*/
 header {
-  /*# can only condense to 3 if all the same number... so r is 2, g is 2, and b is 2*/
-  background: #444;
-  /*color: rgb(0, 0, 0, .5); The .5 is 50% opacity*/
-  color: #fff;
-  padding: 20px;
-  text-align:left;
+  background: #547980;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/*End of header*/
+
+/*A little about me*/
+.about {
+  text-align: left;
+  width: 400px;
+  margin-left: 10px;
 }
 
+/*My Name plus a Photo of myself*/
 h1 {
-  font-size: 40px;
-  color: #009900;
-  /*margin is creating a 20px space between text*/
-  margin-bottom: 20px;
+  font: Arial;
+  font-size: 60px;
+  color: #45ADA8;
 }
 
-body {
-  background: rgb(200, 190, 210);
+section {
+  text-align: center;
+  margin: auto;
 }
 
-main {
-  text-align:left;
+.selfie {
+    margin: auto;
 }
 
-p {
-  margin-bottom: 20px;
+/*Here are a couple of lists. One ordered list and one unordered list.*/
+.unordered {
+  text-align: left;
 }
 
-h2 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-h3 {
-  background: rgb(124, 162, 230);
-  margin-bottom: 10px;
-  font-size: 30px;
-  text-align:left;
-}
-
-ul {
-  background: rgb(124, 162, 230);
-  font: Helvetica;
-  font-size: 20px;
-  font-weight: 200;
-  text-align:left;
+.ordered {
+  text-align: left;
 }

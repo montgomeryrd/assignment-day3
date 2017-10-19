@@ -1,7 +1,10 @@
 'use strict';
-
-alert('Do you want to play a game? \nI call it "How well do you know Richard?" \n\nThe only site that knows YOU CARE!');
+/*
+alert('Do you want to play a game? \nThey call it "How well do you know Richard?" \n\nThe only site that knows YOU CARE!');
 alert('You will be given 5 questions about me to determine whether we should friends. \n\n Answer with a "yes" or "y" or with a "no" or "n"');
+
+var user = prompt('Well Player, let\'s start by getting your name:');
+console.log('User\'s name:', user);
 
 var one = prompt('Given the option of mutant abilities, would I want to be able to fly?');
 console.log('Question One Answer:', one);
@@ -81,4 +84,22 @@ while(number !== 15){
 
 console.log('Counter:', counter);
 
-alert('Nailed it!');
+alert('Nailed it!' ,user);
+*/
+var user = prompt('What\'s your name?');
+console.log('User\'s name:', user);
+
+alert('So anyways ' + user + '. Soon it will be Halloween. I think it\'s a good idea to make a list of scary things to avoid this year. Thing\'s like Heights, Public Pooping, and Narcissists in Power.');
+
+var list = ['Height\'s', ' Pooping in Public Places', ' Narcissists'];
+
+for(var i = 0 ; i < list.length ; i++){
+  var answer = prompt('What else should we add to the Scary List?');
+  console.log('Each scary iteration:', answer);
+  list.push(' ' + answer);
+  if(i === 2) {
+    break;
+  }
+}
+
+alert('The Scary List is Complete! ' + list + '.');

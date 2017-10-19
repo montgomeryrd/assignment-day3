@@ -61,31 +61,33 @@ if(five === 'yes' || five === 'y') {
   alert('I guess it isn\'t everything...');
 };
 
-
+*/
 var number;
 var counter = 1;
 
-while(number !== 15){
-  number = parseInt(prompt('About how many IPAs do you think until my body starts to work in reverse?'));
-
-  if(number < 15) {
+while(counter < 5){
+  number = prompt('About how many IPAs do you think until my body starts to work in reverse?');
+  if(isNaN(number) || number === null) {
+    alert('Please enter a number.');
+  } else if(number < 15) {
     alert(number + '? I can do better than that.');
     counter++;
   } else if(number > 24) {
     alert(number + ' IPAs is how I\'d die. You should guess a smaller number like, 15.');
+    counter++;
   } else if(number > 15) {
     alert('I\'m probably getting closer to shitting myself at ' + number + ' IPAs.');
     counter++;
-  } else if(number === NaN || number === null) {
-    alert('Please enter a number.');
-    counter++;
+  } else if(number === 15) {
+    break;
   }
 }
 
 console.log('Counter:', counter);
 
 alert('Nailed it!' ,user);
-*/
+
+/*
 var user = prompt('What\'s your name?');
 console.log('User\'s name:', user);
 
@@ -102,4 +104,34 @@ for(var i = 0 ; i < list.length ; i++){
   }
 }
 
-alert('The Scary List is Complete! ' + list + '.');
+alert('The Scary List is Complete!');
+alert(list + '.');
+
+/*
+var wrong = 0;
+var right  = 0;
+
+var food = ['beer', 'pizza', 'sandwiches', 'coffee'];
+var answer = prompt('What foods or drinks preserve my mental health?');
+answer = answer.toLowerCase();
+var flag;
+
+for (var i = 0; i < food.length; i++) {
+  console.log('each iteration:', food[i]);
+  if (answer === food[i]) {
+    alert('High-Five!');
+    flag = true;
+    right = right + 1;
+  } else if(i === 5) {
+    break;
+  }
+}
+
+if (!flag) {
+  alert('Sorry, incorrect');
+  wrong = wrong + 1;
+}
+
+alert(right + ' Correct');
+alert(wrong + ' Wrong');
+*/

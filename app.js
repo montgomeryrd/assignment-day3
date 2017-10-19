@@ -1,6 +1,6 @@
 'use strict';
 //Beginning of ASSIGNMENT TWO
-/*
+
 //Introduction and Rules to my Guessing Game
 alert('I want you to play a guessing game. \nThey call it "How well do you know Richard?" \n\nThe only site that knows you care!');
 alert('You will be given 5 questions about me.\n\n Answer with a "yes" or "y" or with a "no" or "n"');
@@ -71,7 +71,7 @@ if(five === 'yes' || five === 'y') {
   alert('Yea... I guess it isn\'t everything...');
 };
 //End of ASSIGNMENT TWO
-*/
+
 //Beginning of ASSIGNMENT THREE
 //Question 6
 var number;
@@ -79,7 +79,7 @@ var counter = 1;
 
 while(counter < 5){
   number = prompt('About how many IPAs do you think until my body starts to work in reverse?');
-  console.log('Counter:', counter);
+  console.log('User Guessed:', number);
   if(isNaN(number) || number === null) {
     alert('Please enter a number.');
   } else if(number < 15) {
@@ -122,15 +122,16 @@ THIS is the end of that mishap*/
 //Question 7
 var flag;
 var correct = 0;
-var guesses = 1;
+var guesses = 0;
 var food = ['beer', 'pizza', 'sandwiches', 'mocha', 'cake', 'steak'];
 
-while(guesses < 7) {
+while(guesses < 6) {
   var answer = prompt('What foods or drinks preserve my mental health?');
   answer = answer.toLowerCase();
+  guesses++;
+  console.log('Number of guesses:', guesses);
   console.log('Guessed: ', answer);
   flag = false;
-  guesses++;
 
   for (var i = 0 ; i < food.length ; i++) {
     if (answer === food[i]) {

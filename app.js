@@ -97,28 +97,6 @@ while(counter < 5){
   }
 }
 
-
-/*THIS was an exercise in not reading thoroughly
-var user = prompt('What\'s your name again?');
-console.log('User\'s name:', user);
-
-alert('So anyways ' + user + '. Soon it will be Halloween. I think it\'s a good idea to make a list of scary things to avoid this year. Thing\'s like Heights, Public Pooping, and Narcissists in Power.');
-
-var list = ['Height\'s', ' Pooping in Public Places', ' Narcissists'];
-
-for(var i = 0 ; i < list.length ; i++){
-  var answer = prompt('What else should we add to the Scary List?');
-  console.log('Each scary iteration:', answer);
-  list.push(' ' + answer);
-  if(i === 2) {
-    break;
-  }
-}
-
-alert('The Scary List is Complete!');
-alert(list + '.');
-THIS is the end of that mishap*/
-
 //Question 7
 var flag;
 var correct = 0;
@@ -146,3 +124,4 @@ while(guesses < 6) {
   }
 }
 alert('Nice guesses. You got ' + correct + ' correct out of 6');
+//End of ASSIGNMENT THREE

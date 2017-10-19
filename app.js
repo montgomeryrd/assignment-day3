@@ -71,7 +71,7 @@ if(five === 'yes' || five === 'y') {
   alert('Yea... I guess it isn\'t everything...');
 };
 //End of ASSIGNMENT TWO
-
+*/
 //Beginning of ASSIGNMENT THREE
 //Question 6
 var number;
@@ -96,9 +96,9 @@ while(counter < 5){
     break;
   }
 }
-*/
 
-/*An exercise in not reading thoroughly
+
+/*THIS was an exercise in not reading thoroughly
 var user = prompt('What\'s your name again?');
 console.log('User\'s name:', user);
 
@@ -117,16 +117,31 @@ for(var i = 0 ; i < list.length ; i++){
 
 alert('The Scary List is Complete!');
 alert(list + '.');
-*/
+THIS is the end of that mishap*/
 
-//var wrong = 0;
-//var correct  = 0;
-var count = 1;
-//var food = ['beer', 'pizza', 'sandwiches', 'mocha'];
+//Question 7
+var flag;
+var correct = 0;
+var guesses = 1;
+var food = ['beer', 'pizza', 'sandwiches', 'mocha'];
 
-while(count < 7) {
+while(guesses < 7) {
   var answer = prompt('What foods or drinks preserve my mental health?');
   answer = answer.toLowerCase();
-  console.log('Guess: ', answer);
-  count++;
+  console.log('Guessed: ', answer);
+  flag = false;
+  guesses++;
+
+  for (var i = 0 ; i < food.length ; i++) {
+    if (answer === food[i]) {
+      alert('Nice Guess! High-Five!');
+      correct++;
+      flag = true;
+    }
+  }
+
+  if(flag === false) {
+    alert('Nope.');
+  }
 }
+alert('Nice guesses. You got ' + correct + ' correct out of 6');

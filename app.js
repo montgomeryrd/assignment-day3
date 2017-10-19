@@ -123,7 +123,7 @@ THIS is the end of that mishap*/
 var flag;
 var correct = 0;
 var guesses = 1;
-var food = ['beer', 'pizza', 'sandwiches', 'mocha'];
+var food = ['beer', 'pizza', 'sandwiches', 'mocha', 'cake', 'steak'];
 
 while(guesses < 7) {
   var answer = prompt('What foods or drinks preserve my mental health?');
